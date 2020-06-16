@@ -1,0 +1,27 @@
+{
+    "LOGIN": {
+        "keep_session": "Mantener sesión abierta",
+        "login": "Entrar",
+        "new_user":"nuevo usuario",
+        "language":"cambiar idioma"
+    },
+    "SIGNUP": {
+        "account":"Tipo de cuenta",
+        "datp":"Datos personales",
+        "datc":"Datos comerciales",
+        "personal": "Personal",
+        "commercial": "Comercial",
+        "comfirm_email":"Confirmar email",
+        "comfirm_password":"Comfirmar password",
+        "operation_ping":"PIN de operaciones",
+        "confirm_pin":"Confirmar PIN",
+        "name":"Nombres",
+        "lastname":"Apellidos",
+        "id_number":"Numero de ID",
+        "postal_code":"Codigo postal",
+        "address":"Dirección",
+        "sector":"Sector",
+        "social":"Razón social",
+        "conditions":"He leido y acepto las condiciones"
+    }
+}

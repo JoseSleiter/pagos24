@@ -1,0 +1,45 @@
+<ion-content class="background_color_darkblue text-center" >
+  <app-logo></app-logo>
+  <div class="distance">
+    <ion-item class="background_color_darkblue">
+        <ion-input placeholder="Email" class="input_distance">
+        </ion-input>
+    </ion-item>
+    <ion-item class="background_color_darkblue">
+      <ion-input placeholder="Password" class="input_distance" [type]="getType()">
+      </ion-input>
+      <ion-icon (click)="toggleTextPassword()" [name]="isActiveToggleTextPassword ? 'eye-off' : 'eye'" size="large" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-grid >
+      <ion-row> 
+        <ion-col size="12"  >
+          <ion-row class="item-in-left">
+            
+            <ion-col size="8" >	
+              <ion-label class="font-10">
+                {{'LOGIN.keep_session' | translate}}
+              </ion-label>
+            </ion-col>
+            <ion-col size="4"> 
+              <ion-toggle color="light"></ion-toggle>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    <ion-button expand="block">{{'LOGIN.login' | translate}}</ion-button>
+
+    <div class="distance-input">
+      <ion-button expand="full" fill="outline"  class="outline-without-border" (click)="goRegister()">
+        {{'LOGIN.new_user' | translate}}
+      </ion-button>
+
+      <ion-button expand="full" fill="outline" class="outline-without-border color-white" (click)="golanguage()"> 
+        {{'LOGIN.language' | translate}}
+      </ion-button> 
+    </div>
+
+</div>
+</ion-content>

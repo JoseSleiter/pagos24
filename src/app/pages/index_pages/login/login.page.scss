@@ -1,0 +1,38 @@
+ion-content{
+    --padding-top: 50%;
+    --padding-end: 10%;
+    --padding-start: 10%;
+
+}
+
+ion-button{
+    --border-radius: 0%;
+
+}
+
+ion-item{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    --padding-end:5%;
+    --border-color: #518DF7;
+}
+
+.distance{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.distance-input{
+    margin-top: 10%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.input_distance{
+    --padding-start: 10% !important;
+}
+
+.outline-without-border{
+    --border-width: 0pt;
+    --background-activated: none; 
+    --background-focused : none;
+    --background-hover: none;
+}

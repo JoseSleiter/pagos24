@@ -1,0 +1,130 @@
+<ion-header>
+  <app-toolbar></app-toolbar>
+</ion-header>
+
+<ion-content class="background_color_white text-center">
+  <div class="backgroud-bluedark separator"> 
+    <ion-label class="text-center">
+      {{'SIGNUP.account' | translate}}
+    </ion-label>
+  </div>
+
+  <ion-segment color="tertiary" [(ngModel)]="segmentModel" (ionChange)="segmentChanged($event)">
+    <ion-segment-button class="color-black" value="personal">
+      <ion-label>{{'SIGNUP.personal' | translate}}</ion-label>
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-segment-button>
+    <div class="segment_separator background_color_black"></div>
+    <ion-segment-button  class="color-black" value="comercial">
+      <ion-label>{{'SIGNUP.commercial' | translate}}</ion-label>
+      <ion-icon name="business-outline"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="backgroud-bluedark separator"> 
+    <ion-label class="text-center">
+      Inicio de sesión
+    </ion-label>
+  </div>
+  <form class="display-contents">
+    <div class="form_padding">
+      <ion-item class="background_color_white">
+        <ion-input placeholder="Email" class="input_distance">
+        </ion-input>
+      </ion-item>
+      <ion-item class="background_color_white">
+        <ion-input placeholder="{{'SIGNUP.comfirm_email' | translate}}" class="input_distance">
+        </ion-input>
+    </ion-item>
+      <ion-item class="background_color_white">
+        <ion-input placeholder="Password" class="input_distance">
+        </ion-input>
+        <ion-icon name="eye" class="color-black" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item class="background_color_white">
+        <ion-input placeholder="{{'SIGNUP.comfirm_password' | translate}}" class="input_distance">
+        </ion-input>
+        <ion-icon name="eye" class="color-black" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item class="background_color_white">
+        <ion-input placeholder="{{'SIGNUP.operation_ping' | translate}}" class="input_distance">
+        </ion-input>
+        <ion-icon name="eye" class="color-black" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item class="background_color_white">
+        <ion-input placeholder="{{'SIGNUP.confirm_pin' | translate}}" class="input_distance">
+        </ion-input>
+        <ion-icon name="eye" class="color-black" slot="end"></ion-icon>
+      </ion-item>
+    </div>
+    <div *ngIf="segmentModel === 'personal'">
+      <div class="backgroud-bluedark separator"> 
+        <ion-label class="text-center">
+          {{'SIGNUP.datp' | translate}}
+        </ion-label>
+      </div>
+      <div>
+        <ion-item class="background_color_white">
+          <ion-input placeholder="{{'SIGNUP.name' | translate}}" class="input_distance">
+          </ion-input>
+        </ion-item>
+        <ion-item class="background_color_white">
+          <ion-input placeholder="{{'SIGNUP.lastname' | translate}}" class="input_distance">
+          </ion-input>
+        </ion-item>
+        <ion-item class="background_color_white">
+          <ion-input placeholder="{{'SIGNUP.id_number' | translate}}" class="input_distance">
+          </ion-input>
+        </ion-item>
+        <ion-item class="background_color_white">
+          <ion-input placeholder="{{'SIGNUP.postal_code' | translate}}" class="input_distance">
+          </ion-input>
+        </ion-item>
+        <ion-item class="background_color_white">
+          <ion-input placeholder="{{'SIGNUP.address' | translate}}" class="input_distance">
+          </ion-input>
+        </ion-item>
+      </div>
+    </div>
+    <div *ngIf="segmentModel != ''">
+      <div *ngIf="segmentModel === 'comercial'">
+        <div class="backgroud-bluedark separator"> 
+          <ion-label class="text-center">
+            {{'SIGNUP.datc' | translate}}
+          </ion-label>
+        </div>
+        <div >
+          <ion-item class="background_color_white">
+            <ion-input placeholder="{{'SIGNUP.social' | translate}}" class="input_distance">
+            </ion-input>
+          </ion-item>
+          <ion-item class="background_color_white">
+            <ion-input placeholder="{{'SIGNUP.id_number' | translate}}" class="input_distance">
+            </ion-input>
+          </ion-item>
+          <ion-item class="background_color_white">
+            <ion-input placeholder="URL web" class="input_distance">
+            </ion-input>
+          </ion-item>
+          <ion-item class="background_color_white">
+            <ion-input placeholder="{{'SIGNUP.sector' | translate}}" class="input_distance">
+            </ion-input>
+          </ion-item>
+          <ion-item class="background_color_white">
+            <ion-input placeholder="{{'SIGNUP.postal_code' | translate}}" class="input_distance">
+            </ion-input>
+          </ion-item>
+          <ion-item class="background_color_white">
+            <ion-input placeholder="{{'SIGNUP.address' | translate}}" class="input_distance">
+            </ion-input>
+          </ion-item>
+        </div>
+      </div>
+      <ion-item class="background_color_white white">
+        <ion-checkbox class="circular-checked" color="primary"></ion-checkbox>
+        <ion-label class="pleft-10 black">{{'SIGNUP.conditions' | translate}}</ion-label>
+      </ion-item>
+    </div>
+  </form>
+
+</ion-content>

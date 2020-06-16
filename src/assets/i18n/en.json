@@ -1,0 +1,27 @@
+{
+    "LOGIN": {
+        "keep_session": "Keep session open",
+        "login": "Login",
+        "new_user":"Singup",
+        "language":"Change language"
+    },
+    "SIGNUP": {
+        "account":"Account Type",
+        "datp":"Personal information",
+        "datc":"Commercial data",
+        "personal": "Personal",
+        "commercial": "Commercial",
+        "comfirm_email":"Confirm email",
+        "comfirm_password":"Comfirm password",
+        "operation_ping":"Operations pin",
+        "confirm_pin":"Confirm pin",
+        "name":"Names",
+        "lastname":"Lastnames",
+        "id_number":"ID number",
+        "postal_code":"Postal code",
+        "address":"Address",
+        "sector":"Sector",
+        "social":"Business name",
+        "conditions":"I have read and accept the conditions"
+    }
+}
